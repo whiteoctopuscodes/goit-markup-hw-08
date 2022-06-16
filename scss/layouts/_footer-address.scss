@@ -1,0 +1,40 @@
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--background);
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.google-address {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.footer-contacts {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.address__list {
+    list-style: none;
+    padding: 0;
+}
+.address__item {
+    &:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+    &:first-child {
+        margin-top: 20px;
+    }
+}
