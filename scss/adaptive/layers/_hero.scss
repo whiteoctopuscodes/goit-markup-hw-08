@@ -4,6 +4,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @media screen and (min-width: 768px) {
+        padding: 118px 204px;
+}
+.hero .container {
+    display: flex;
+    justify-content: center;
+}
 }
 .hero__title {
     margin-bottom: 30px;
@@ -16,10 +24,14 @@
     text-transform: uppercase;
 
     color: var(--main-color);
+    @media screen and (min-width: 768px) {
+        width: 360px;
+    }
 }
 
 .hero__button {
     display: flex;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
     padding: 10px 32px;
