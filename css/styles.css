@@ -136,6 +136,12 @@ body {
   text-decoration: none;
 }
 
+@media screen and (min-width: 768px) {
+  .header {
+    height: 80px;
+  }
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -184,6 +190,7 @@ body {
 }
 
 .hero__title {
+  margin: 0 auto;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 26px;
@@ -196,7 +203,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero__title {
-    width: 360px;
+    width: 368px;
   }
 }
 
@@ -672,6 +679,20 @@ body {
   background-color: var(--accent-color);
 }
 
+.portfolio__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__list {
+    margin: -15px;
+  }
+}
+
 .portfolio__item {
   width: 100%;
   background: #FFFFFF;
@@ -687,6 +708,13 @@ body {
 
 .portfolio__item + .portfolio__item {
   margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    width: 354px;
+    margin: 15px;
+  }
 }
 
 .card__effect {

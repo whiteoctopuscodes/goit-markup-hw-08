@@ -14,7 +14,9 @@
 }
 }
 .hero__title {
+    margin: 0 auto;
     margin-bottom: 30px;
+    
 
     font-weight: 900;
     font-size: 26px;
@@ -25,7 +27,7 @@
 
     color: var(--main-color);
     @media screen and (min-width: 768px) {
-        width: 360px;
+        width: 368px;
     }
 }
 
