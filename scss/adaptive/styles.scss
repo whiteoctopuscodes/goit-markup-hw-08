@@ -1,0 +1,24 @@
+@import "./utils/reset";
+@import "./utils/root";
+@import "./utils/body";
+@import "./utils/container";
+
+@import "./components/emblem";
+@import "./layers/header";
+
+@import "./layers/hero";
+@import "./components/modal";
+@import "./layers/advantages";
+@import "./layers/ourwork";
+@import "./layers/ourteam";
+
+@import "./components/socials";
+
+@import "./layers/partners";
+
+@import "./layers/footer-address";
+@import "./layers/footer-socials";
+@import "./layers/footer-form";
+
+@import "./layers/portfolio-buttons";
+@import "./layers/portfolio-items";
