@@ -27,14 +27,42 @@ h1, h2, h3, p {
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--main-text-color);
-  margin-top: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin-top: 80px;
+  }
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 460px) {
+  .container {
+    width: 460px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .header {
@@ -52,6 +80,12 @@ body {
 
 .header a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 60px;
+  }
 }
 
 .header__container {
@@ -72,15 +106,30 @@ body {
           align-items: center;
 }
 
-.header-emblem {
-  margin-right: 93px;
-}
-
 .nav__list {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .nav__item:not(:last-child) {
@@ -115,11 +164,25 @@ body {
   background-color: var(--accent-color);
 }
 
-.header-contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
+@media screen and (max-width: 768px) {
+  .header-contacts {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-contacts {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .header-contacts__link {
@@ -142,8 +205,20 @@ body {
   color: var(--accent-color);
 }
 
-.header-contacts__link:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .header-contacts__link:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-contacts__link {
+    font-size: 12px;
+    line-height: 1.12;
+  }
+  .header-contacts__link + .header-contacts__link {
+    margin-top: 10px;
+  }
 }
 
 .header-contacts__icon {
@@ -151,6 +226,13 @@ body {
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .header-contacts__icon {
+    width: 12px;
+    height: 12px;
+  }
 }
 
 .page-footer {
@@ -317,11 +399,42 @@ body {
   text-decoration: none;
   font-family: 'Raleway';
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
   display: block;
+  letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+
+@media screen and (max-width: 768px) {
+  .emblem {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .emblem {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .emblem {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-emblem {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-emblem {
+    margin-right: 93px;
+  }
 }
 
 .header-emblem__span {
@@ -333,7 +446,6 @@ body {
 }
 
 .hero {
-  max-width: 1600px;
   margin: 0 auto;
   text-align: center;
   position: relative;
@@ -344,6 +456,25 @@ body {
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herophoto.jpg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    max-width: 460px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+  }
 }
 
 .hero__title {
