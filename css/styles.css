@@ -679,42 +679,26 @@ body {
   background-color: var(--accent-color);
 }
 
-.portfolio__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-@media screen and (min-width: 768px) {
-  .portfolio__list {
-    margin: -15px;
-  }
-}
-
+.portfolio__list
 .portfolio__item {
-  width: 100%;
+  width: 450px;
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
   background: var(--main-color);
 }
 
-.portfolio__item:hover, .portfolio__item:focus {
+.portfolio__list
+.portfolio__item:hover, .portfolio__list
+.portfolio__item:focus {
   border: 1px solid #EEEEEE;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio__item + .portfolio__item {
+.portfolio__list
+.portfolio__item + .portfolio__list
+.portfolio__item {
   margin-top: 30px;
-}
-
-@media screen and (min-width: 768px) {
-  .portfolio__item {
-    width: 354px;
-    margin: 15px;
-  }
 }
 
 .card__effect {
