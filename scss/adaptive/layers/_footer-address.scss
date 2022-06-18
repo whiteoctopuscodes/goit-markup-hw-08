@@ -13,16 +13,27 @@
         justify-content: space-around;
         align-items: baseline;
     }
+    @media screen  and (min-width:1200px) {
+        justify-content: space-between;
+    }
 }
 
 .address__list {
     text-align: center;
     font-style: normal;  
     margin-bottom: 60px; 
+    @media screen  and (min-width:1200px) {
+        text-align: start;
+    }
 }
 .address__item {
     & + & {
         margin-top: 8px;
+    }
+    @media screen  and (min-width:1200px) {
+        & + & {
+            margin-top: 9px;
+        }
     }
 }
 .google-address {

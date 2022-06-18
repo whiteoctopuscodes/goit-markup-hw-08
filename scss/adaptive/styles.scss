@@ -3,13 +3,14 @@
 @import "./utils/body";
 @import "./utils/container";
 
-@import "./components/emblem";
+
 @import "./layers/header";
 
 @import "./layers/hero";
-@import "./components/modal";
+@import "./layers/modal-window";
+
 @import "./layers/advantages";
-@import "./layers/ourwork";
+@import "./layers/our-work";
 @import "./layers/ourteam";
 
 @import "./components/socials";
@@ -22,3 +23,7 @@
 
 @import "./layers/portfolio-buttons";
 @import "./layers/portfolio-items";
+
+@import "./layers/header--menu";
+@import "./layers/header--contacts";
+@import "./components/emblem";

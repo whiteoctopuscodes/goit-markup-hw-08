@@ -5,6 +5,13 @@
     margin: -7px -4px;
 
     margin-bottom: 40px;
+    @media screen  and (min-width:768px) {
+        justify-content: center;
+    }
+    
+    @media screen  and (min-width:1200px) {
+        margin-bottom: 50px;
+    }
 }
 .categories__item {
     margin: 7px 4px;

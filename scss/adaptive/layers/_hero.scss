@@ -1,22 +1,19 @@
 .hero {
-    padding: 118px 60px;
+    margin: 0 auto;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herophoto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
 
-    @media screen and (min-width: 768px) {
-        padding: 118px 204px;
-}
-.hero .container {
-    display: flex;
-    justify-content: center;
-}
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 }
 .hero__title {
-    margin: 0 auto;
     margin-bottom: 30px;
-    
 
     font-weight: 900;
     font-size: 26px;
@@ -24,25 +21,26 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
     color: var(--main-color);
-    @media screen and (min-width: 768px) {
-        width: 368px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 136%;
     }
 }
-
 .hero__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     margin: 0 auto;
     padding: 10px 32px;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 188%;
     letter-spacing: 0.06em;
+
     color: var(--main-color);
-    background-color: var(--accent-color);
     border: none;
     border-radius: 4px;
+    background-color: var(--accent-color);
+    cursor: pointer;
 }
