@@ -6,6 +6,9 @@
     }
 }
 .advantages__item {
+    @media screen and (max-width: 480px) {
+        width: 100%;
+    }
     &:not(:last-child) {
         margin-bottom: 30px;
     }
