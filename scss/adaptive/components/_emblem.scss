@@ -6,11 +6,7 @@
     letter-spacing: 0.03em;
     color: var(--accent-color);
 
-    @media screen and (max-width: 768px) {
-        font-size: 24px;
-        line-height: 1.16;
-    }
-    @media screen and (min-width: 768px){
+    @media screen and (max-width: 1199px) {
         font-size: 24px;
         line-height: 1.16;
     }
@@ -20,13 +16,13 @@
     }
 }
 .header-emblem {   
-    @media screen and (min-width: 768px){
-        margin-right: 88px;
-    }
+    
     @media screen and (min-width: 1200px){
         margin-right: 93px;
     }
-    
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        margin-right: 88px;
+    }
 }
 .footer__emblem {
     text-align: center;

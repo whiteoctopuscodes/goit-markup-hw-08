@@ -4,39 +4,89 @@
     left: 0;
     width: 100%;
     height: 60px;
+    background-color: var(--main-color);
+    border-bottom: 1px solid #ECECEC;
     z-index: 100;
-    background-color: #fff;
-    border: 1px solid #ECECEC;
 
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
-    & a {
-        text-decoration: none;
-    }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width:768px) {
         height: 80px;
     }
 }
 .header__container {
+    height: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
-
+.nav {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width:767px) {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
 .nav__list {
     display: none;
+
+    @media screen and (min-width:768px){
+        display: flex;
+    }
 }
 .header-contacts {
     display: none;
-}
-.burger-icon {
-    display: block;
-    width: 24px;
-    height: 24px;
-    background-color: black;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    @media screen and (min-width:1200px) {
+        display: flex;
+        align-items: center;
+    }
+}
+.burger-menu {
+    display: block;
+    border: none;
+    background-color: #fff;
+    @media screen and (min-width:768px) {
         display: none;
     }
+    & .burger-close {
+        opacity: 0;
+    }
+    &.is-open .burger-open {
+        opacity: 0;
+    }
+    &.is-open .burger-close {
+        opacity: 1;
+    }
+
+}
+
+.burger-icon {
+    
+    width: 40px;
+    height: 40px;
+    fill: var(--main-text-color);
+    
+    .burger-menu:hover & ,
+    .burger-menu:focus & {
+        fill: var(--accent-color);
+    }
+}
+.burger-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vw;
+    background-color: var(--main-color);
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+.burger-container.is-open {
+    opacity: 1;
 }

@@ -23,8 +23,15 @@
                 <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
                 <li class="nav__item"><a class="nav__link"href="">Контакты</a></li>
             </ul>
+            <button class="burger-menu" type="button" data-menu-button>
+                <svg class="burger-icon">
+                    <use class="burger-open" href="./images/icon.svg#menu_burger"></use>
+                    <use class="burger-close" href="./images/icon.svg#close_menu"></use>
+                </svg>
+                </button>
+                <div class="burger-container" data-menu-button></div>
         </nav>
-        <div class="header-contacts">    
+       <div class="header-contacts" data-menu-button>    
                 <a class="header-contacts__link" href="mailto:info@devstudio.com">
                     <svg class="header-contacts__icon">
                     <use href="./images/icon.svg#envelope" ></use>
@@ -39,10 +46,7 @@
                 +38 096 111 11 11
                 </a> 
         </div>
-        <svg class="burger-icon">
-            <use class="buger-menu"></use>
-            <use class="burger-open"></use>
-        </svg>
+        
         </div>       
     </header>
     <main>
@@ -413,6 +417,7 @@
                 <li class="team__item">
                     <picture>
                         <source
+
                             media="(max-width: 480px)"
                             width="100%"
                             srcset="./images/portrait-4-mob-1x.jpg 1x ,
