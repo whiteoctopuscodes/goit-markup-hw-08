@@ -140,17 +140,39 @@
                 <h2>Чем мы занимаемся</h2>
                 <ul class="ourwork__list">
                     <li class="ourwork__item">
-                        <div class="ourwork__group"><img src="./images/img1.jpg" alt="Стационарный компьтер" width="370" height="294">
+                        <div class="ourwork__group">
+                            <picture>
+                                <source
+                                    srcset="./images/desctop1x.jpg 1x , 
+                                    ./images/desctop2x.jpg 2x"
+                                >
+                                <img src="./images/desctop1x.jpg" alt="Работающий за компьютером человек">
+                            </picture>
                         <p class="ourwork__text">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="ourwork__item">
-                        <div class="ourwork__group"><img src="./images/img2.jpg" alt="Ноутбук" width="370" height="294">
+                        <div class="ourwork__group">
+                            <picture>
+                                <source
+                                    srcset="./images/mobile1x.jpg 1x , 
+                                    ./images/mobile2x.jpg 2x"
+                                >
+                                <img src="./images/mobile1x.jpg" alt="Мобильный телефон в руках">
+                            </picture>
                             <p class="ourwork__text">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="ourwork__item">
-                        <div class="ourwork__group"><img src="./images/img3.jpg" alt="Планшет" width="370" height="294"><p class="ourwork__text">Дизайнерские решения</p>
+                        <div class="ourwork__group">
+                            <picture>
+                                <source
+                                    srcset="./images/design1x.jpg 1x , 
+                                    ./images/design2x.jpg 2x"
+                                >
+                                <img src="./images/design1x.jpg" alt="Планшет в руках">
+                            </picture>
+                            <p class="ourwork__text">Дизайнерские решения</p>
                     </div>
                     </li>
                 </ul>
@@ -161,7 +183,24 @@
             <h2>Наша команда</h2>
             <ul class="team__list">
                 <li class="team__item">
-                    <img src="./images/img4.jpg" alt="Портрет" width="270" height="260">
+                    <picture>
+                        <source
+                            media="(min-width: 480px) and (max-width:767px)"
+                            srcset="./images/portrait-1-mob-1x.jpg 1x ,
+                            ./images/portrait-1-mob-2x.jpg 2x "
+                        >
+                        <source
+                            media="(min-width: 768px) and (max-width: 1199px)"
+                            srcset="./images/portrait-1-tab-1x.jpg 1x ,
+                            ./images/portrait-1-tab-2x.jpg 2x "
+                        >
+                        <source
+                            media="(min-width: 1200px)"
+                            srcset="./images/portrait-1-scr-1x.jpg 1x ,
+                            ./images/portrait-1-scr-2x.jpg 2x "
+                        >
+                        <img src="./images/portrait-1-scr-1x.jpg" alt="Игорь Демьяненко">
+                    </picture>
                     <div class="team__group">
                         <h3>Игорь Демьяненко</h3>
                         <p>Product Designer</p> 
@@ -214,7 +253,24 @@
                     </div>  
                 </li>
                 <li class="team__item">
-                    <img src="./images/img5.jpg" alt="Портрет" width="270" height="260">
+                    <picture>
+                        <source
+                                media="(min-width: 480px) and (max-width:767px)"
+                                srcset="./images/portrait-2-mob-1x.jpg 1x ,
+                                ./images/portrait-2-mob-2x.jpg 2x "
+                            >
+                            <source
+                                media="(min-width: 768px) and (max-width: 1199px)"
+                                srcset="./images/portrait-2-tab-1x.jpg 1x ,
+                                ./images/portrait-2-tab-2x.jpg 2x "
+                            >
+                            <source
+                                media="(min-width: 1200px)"
+                                srcset="./images/portrait-2-scr-1x.jpg 1x ,
+                                ./images/portrait-2-scr-2x.jpg 2x "
+                            >
+                            <img src="./images/portrait-2-scr-1x.jpg" alt="Ольга Репина">
+                    </picture>
                     <div class="team__group">
                         <h3>Ольга Репина</h3>
                         <p>Frontend Developer</p>
@@ -267,7 +323,24 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img src="./images/img6.jpg" alt="Портрет" width="270" height="260">
+                    <picture>
+                        <source
+                                media="(min-width: 480px) and (max-width:767px)"
+                                srcset="./images/portrait-3-mob-1x.jpg 1x ,
+                                ./images/portrait-3-mob-2x.jpg 2x "
+                            >
+                            <source
+                                media="(min-width: 768px) and (max-width: 1199px)"
+                                srcset="./images/portrait-3-tab-1x.jpg 1x ,
+                                ./images/portrait-3-tab-2x.jpg 2x "
+                            >
+                            <source
+                                media="(min-width: 1200px)"
+                                srcset="./images/portrait-3-scr-1x.jpg 1x ,
+                                ./images/portrait-3-scr-2x.jpg 2x "
+                            >
+                            <img src="./images/portrait-3-scr-1x.jpg" alt="Николай Тарасов">
+                    </picture>
                     <div class="team__group">
                         <h3>Николай Тарасов</h3>
                         <p>Marketing</p>
@@ -320,7 +393,24 @@
                     </div> 
                 </li>
                 <li class="team__item">
-                    <img src="./images/img7.jpg" alt="Портрет" width="270" height="260">
+                    <picture>
+                    <source
+                            media="(min-width: 480px) and (max-width: 768px)"
+                            srcset="./images/portrait-4-mob-1x.jpg 1x ,
+                            ./images/portrait-4-mob-2x.jpg 2x "
+                        >
+                        <source
+                            media="(min-width: 768px) and (max-width: 1199px)"
+                            srcset="./images/portrait-4-tab-1x.jpg 1x ,
+                            ./images/portrait-4-tab-2x.jpg 2x "
+                        >
+                        <source
+                            media="(min-width: 1200px)"
+                            srcset="./images/portrait-4-scr-1x.jpg 1x ,
+                            ./images/portrait-4-scr-2x.jpg 2x "
+                        >
+                        <img src="./images/portrait-4-scr-1x.jpg" alt="Михаил Ермаков">
+                    </picture>
                     <div class="team__group">
                         <h3>Михаил Ермаков</h3>
                         <p>UI Designer</p>
