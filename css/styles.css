@@ -406,7 +406,7 @@ body {
 
 @media screen and (max-width: 479px) {
   .backdrop {
-    padding: auto;
+    padding: 10px 10px;
   }
 }
 
@@ -450,10 +450,6 @@ body {
   .modal {
     width: 95%;
     max-width: 450px;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
   }
 }
 
