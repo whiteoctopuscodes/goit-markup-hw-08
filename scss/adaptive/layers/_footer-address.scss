@@ -22,10 +22,13 @@
 
 .address__list {
     text-align: center;
-    font-style: normal;  
-    margin-bottom: 60px; 
+    font-style: normal;   
+
     @media screen  and (min-width:1200px) {
         text-align: start;
+    }
+    @media screen and (min-width:767px) and (max-width:1199px) {
+        margin-bottom: 60px;
     }
 }
 .address__item {
