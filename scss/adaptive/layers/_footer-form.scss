@@ -53,6 +53,8 @@
 }
 .footer-form__button {
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
     align-items: center;
     padding: 10px 29px;
@@ -70,6 +72,10 @@
     cursor: pointer;
     @media screen  and (min-width:1200px) {
         margin: 0;
+    }
+    @media screen and (max-width:479px) {
+        width: 100%;
+        max-width: 201px;
     }
 }
 .footer-form__icon {

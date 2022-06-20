@@ -1,4 +1,8 @@
 .portfolio__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: -15px;
     @media screen and (min-width: 768px) {
         display: flex;
@@ -11,7 +15,6 @@
 }
 .portfolio__item {
     margin: 15px;
-    
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     background: var(--main-color);

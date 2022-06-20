@@ -152,6 +152,10 @@
         color: var(--accent-color);
         text-decoration: underline;
     }
+    @media screen and (max-width:479px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 input[type="checkbox"] {
     appearance: none;
@@ -173,7 +177,9 @@ input[type="checkbox"] {
 }
 .modal__button {
     padding: 10px 55px;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
 
     border: none;
@@ -182,10 +188,15 @@ input[type="checkbox"] {
 
     font-weight: 700;
     font-size: 16px;
-    line-height: 188%;
+    line-height: 1.88;
 
     letter-spacing: 0.06em;
 
     color: var(--main-color);
     cursor: pointer;
+
+    @media screen and (max-width:479px) {
+        max-width: 200px;
+        width: 100%;
+    }
 }

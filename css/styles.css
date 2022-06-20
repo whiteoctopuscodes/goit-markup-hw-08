@@ -216,6 +216,9 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -266,7 +269,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100%;
+    width: 95%;
   }
 }
 
@@ -586,6 +589,16 @@ body {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 479px) {
+  .form-field__checkbox {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 input[type="checkbox"] {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -610,17 +623,32 @@ input[type="checkbox"]:checked + .form-field__icon {
 
 .modal__button {
   padding: 10px 55px;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 auto;
   border: none;
   border-radius: 4px;
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
-  line-height: 188%;
+  line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--main-color);
   cursor: pointer;
+}
+
+@media screen and (max-width: 479px) {
+  .modal__button {
+    max-width: 200px;
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1063,7 +1091,7 @@ input[type="checkbox"]:checked + .form-field__icon {
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .address__list {
     margin-bottom: 60px;
   }
@@ -1233,10 +1261,14 @@ input[type="checkbox"]:checked + .form-field__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  align-items: center;
   padding: 10px 29px;
   font-weight: 700;
   font-size: 16px;
@@ -1253,6 +1285,13 @@ input[type="checkbox"]:checked + .form-field__icon {
 @media screen and (min-width: 1200px) {
   .footer-form__button {
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .footer-form__button {
+    width: 100%;
+    max-width: 201px;
   }
 }
 
@@ -1319,6 +1358,19 @@ input[type="checkbox"]:checked + .form-field__icon {
 }
 
 .portfolio__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: -15px;
 }
 
