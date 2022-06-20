@@ -9,6 +9,12 @@
     color: var(--main-text-color);
     @media screen  and (min-width:1200px) {
         margin-bottom: 50px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--main-text-color);
     }
 }
 .partners-list {
@@ -35,7 +41,9 @@
     border-radius: 4px;
     color: var(--link-color);
 
-    &:hover {
+    transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1), 250ms outline cubic-bezier(0.4, 0, 0.2, 1); 
+
+    &:hover, &:focus {
         outline: 1px solid var(--accent-color);
         color: var(--accent-color);
     }

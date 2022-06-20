@@ -18,28 +18,25 @@
     align-items: center;
     justify-content: space-between;
 }
-.nav {
-    display: flex;
-    align-items: center;
-    @media screen and (max-width:767px) {
-        width: 100%;
-        justify-content: space-between;
-    }
-}
 .nav__list {
-    display: none;
-
+    @media screen and (max-width:767px) {
+        display: block;
+    }
     @media screen and (min-width:768px){
         display: flex;
     }
 }
 .header-contacts {
-    display: none;
+    @media screen and (max-width:767px) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
     @media screen and (min-width:768px) and (max-width:1199px) {
         display: flex;
         flex-direction: column;
         justify-content: center;
+
     }
     @media screen and (min-width:1200px) {
         display: flex;
@@ -48,8 +45,10 @@
 }
 .burger-menu {
     display: block;
+    margin-left: auto;
     border: none;
     background-color: #fff;
+    z-index: 101;
     @media screen and (min-width:768px) {
         display: none;
     }
@@ -65,6 +64,38 @@
 
 }
 
+.menu-container {
+    @media screen and (max-width:767px) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 796px;
+        background-color: #fff;
+        padding: 48px 40px;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    @media screen and (min-width:768px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+}
+.menu-container.is-open {
+        opacity: 1;
+        visibility: inherit;
+        pointer-events: all;
+
+    }
+
 .burger-icon {
     
     width: 40px;
@@ -76,17 +107,17 @@
         fill: var(--accent-color);
     }
 }
-.burger-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vw;
-    background-color: var(--main-color);
-    opacity: 0;
-    z-index: -1;
-    pointer-events: none;
+
+.header-socials__link {
+    margin: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
 }
-.burger-container.is-open {
-    opacity: 1;
+.header-socials__span {
+    width: 1px;
+    height: 22px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
 }

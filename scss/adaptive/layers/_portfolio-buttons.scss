@@ -4,9 +4,12 @@
     flex-wrap: wrap;
     margin: -7px -4px;
 
-    margin-bottom: 40px;
-    @media screen  and (min-width:768px) {
+    @media screen and (max-width:767px) {
+        margin-bottom: 40px;
+    }
+    @media screen  and (min-width:768px) and (max-width:1199px){
         justify-content: center;
+        margin-bottom: 30px;
     }
     
     @media screen  and (min-width:1200px) {
@@ -29,6 +32,8 @@
     border-radius: 4px;
     background-color: var(--team-color);
     cursor: pointer;
+
+    transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1), 250ms background-color cubic-bezier(0.4, 0, 0.2, 1); 
     &:hover, &:focus {
         color: var(--main-color);
         background-color: var(--accent-color);

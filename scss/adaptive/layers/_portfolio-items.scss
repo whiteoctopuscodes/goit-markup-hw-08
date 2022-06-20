@@ -15,10 +15,12 @@
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     background: var(--main-color);
+
+    transition: 250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1); 
     &:hover, &:focus {
-        border: 1px solid #EEEEEE;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
+        transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1); 
+        }
     @media screen and (min-width: 768px) {
         width: 354px;
     }
@@ -52,6 +54,7 @@
     transform: translateY(100%);
     transition: 500ms transform cubic-bezier(0.075, 0.82, 0.165, 1);
 
+    transition: 250ms transform cubic-bezier(0.4, 0, 0.2, 1); 
     .portfolio__item:hover &, 
     .portfolio__item:focus &{
         transform: translateY(0);
